@@ -1,4 +1,5 @@
 import ebook
+import sys
 from scripts import editor
 
 
@@ -9,5 +10,5 @@ def fix_ebook(filename):
     book.rebuild_book()
 
 
-filename = 'Grancrest Senki 1 - Rainbow Mage Siluca.epub'
+filename = sys.argv[-1]
 fix_ebook(filename)
